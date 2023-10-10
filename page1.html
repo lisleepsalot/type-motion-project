@@ -29,6 +29,11 @@
     </div>
 
     <div class="content-container">
+      <div class="voice-between not-shown">
+        <div class="voice">
+          Who is Mr.Jones this time?
+        </div>
+      </div>
       <div class="mid-container">
         <div class="container">
           <div class="line">
@@ -66,9 +71,6 @@
           </div>
           <div class="line">
             <span class="item2">He always</span><span class="item5"style="left: 66px;">said that,</span>
-          </div>
-          <div class="line">
-            <span class="empty-blank item4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
           </div>
           <div class="line">
             <span class="item5">wherever</span>
@@ -145,9 +147,9 @@
     <audio class="audioClick" src="sounds/click.mp3"></audio>
   </body>
   <script src="containerData.js"></script>
-  <script>localStorage.clear();</script>
   <script src="test2.js"></script>
   <script src="line.js"></script>
+  <script src="addVoice.js"></script>
   <script src="fillBlank.js"></script>
   <script>
     document.querySelector('.drop-button').addEventListener('click', () => {
@@ -156,11 +158,15 @@
         retrieveAndAccumulateContent();
         setTimeout(function() {
           window.location.href = "page2.html";
-        }, 2000);
+        }, 3800);
         setTimeout(function() {
           const contentContainer = document.querySelector('.right-part-container');
           contentContainer.style.marginLeft = '100vw';
         }, 1300);
+        setTimeout(function() {
+          addVoice();
+        }, 2000);
+        
 
         const audioElement = document.querySelector('.audioFall');
         audioElement.volume = 0.6;

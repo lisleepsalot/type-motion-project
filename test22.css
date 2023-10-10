@@ -62,14 +62,14 @@
   position: absolute;
   padding: 1.5px 30px 1.5px 2px;
 }
-.end-button{
+.center{
   font-family: archivo;
   font-size: 14px;
   position: absolute;
-  top: 10%;
+  top: 9%;
   left: 10%;
-  border: 1px solid black;
   padding: 2px 4px;
+  width: 370px;
 }
 .content-container{
   margin-top: -70px;
@@ -82,7 +82,7 @@
   height: 100vh;
 }
 .content-container1{
-  margin-top: -4800px;
+  margin-top: -2800px;
   margin-left: -230px;
   font-family: 'Archivo';
   font-variation-settings: "WDTH" 90;
@@ -102,6 +102,22 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+#end-button{
+  display: inline-block;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 4px;
+  margin-bottom: 300px;
+}
+
+#end-button:hover{
+
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
 }
 
 /* these are animations */
@@ -275,4 +291,21 @@
     top: 2000px;
 
   }
+}
+
+
+.voice-between{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.voice{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: archivo;
+  font-variation-settings: "WDTH" 90;
+  font-size: 14px;
 }

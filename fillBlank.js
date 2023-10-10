@@ -4,6 +4,7 @@ function fillBlank1(word) {
   blank1Filled = true;
   const audioElement = document.querySelector('.audioClick');
 
+  audioElement.currentTime = 0;
   audioElement.play();
 }
 
@@ -13,6 +14,7 @@ function fillBlank2(word) {
   blank2Filled = true;
   const audioElement = document.querySelector('.audioClick');
 
+  audioElement.currentTime = 0;
   audioElement.play();
 }
 
@@ -22,6 +24,7 @@ function fillBlank3(word) {
   blank3Filled = true;
   const audioElement = document.querySelector('.audioClick');
 
+  audioElement.currentTime = 0;
   audioElement.play();
 }
 
@@ -31,6 +34,7 @@ function fillBlank4(word) {
   blank4Filled = true;
   const audioElement = document.querySelector('.audioClick');
 
+  audioElement.currentTime = 0;
   audioElement.play();
 }
 
@@ -40,6 +44,7 @@ function fillBlank5(word) {
   blank5Filled = true;
   const audioElement = document.querySelector('.audioClick');
 
+  audioElement.currentTime = 0;
   audioElement.play();
 }
 
