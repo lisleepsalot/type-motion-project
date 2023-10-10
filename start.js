@@ -27,7 +27,11 @@ function addArchive() {
         date: ${dateString}<br>
         note:____________________
       `;
-      console.log
+      document.querySelector('.black-archive-text').innerHTML=`
+        Don't attempt to delve into someone's past.<br>
+        This is not your archive.<br>
+        Choose something else.
+      `
       // For the element with '.black-archive-text' class
     const blackArchiveTextElement = document.querySelector('.black-archive-text');
     if (blackArchiveTextElement) {
